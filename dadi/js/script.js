@@ -9,24 +9,21 @@ buttonElement.addEventListener('click',
         let computerChoice = Math.floor(Math.random() * 6) + 1;
         let humanChoice = Math.floor(Math.random() * 6) + 1;
 
+        computerDice.innerHTML = `${computerChoice}`;
+        humanDice.innerHTML = `${humanChoice}`;
+
         if (humanChoice == computerChoice) {
 
-            computerDice.innerHTML = `${computerChoice}`;
-            humanDice.innerHTML = `${humanChoice}`;
             resultElement.innerHTML = "Hai pareggiato";
             resultElement.className = " text-warning";
 
         } else if (humanChoice > computerChoice){
             
-            computerDice.innerHTML = `${computerChoice}`;
-            humanDice.innerHTML = `${humanChoice}`;
             resultElement.innerHTML = "Hai vinto";
             resultElement.className = " text-success-emphasis";
 
         } else {
             
-            computerDice.innerHTML = `${computerChoice}`;
-            humanDice.innerHTML = `${humanChoice}`;
             resultElement.innerHTML = "Hai perso";
             resultElement.className = " text-danger";
 
