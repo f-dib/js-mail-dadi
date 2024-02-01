@@ -20,10 +20,24 @@
 
 
     <section class="bg-success d-flex justify-content-center align-items-center vh-100">
-        <div class="dice">
+        <div class="dice d-none d-xl-block">
             <img class="img-fluid" src="./img/pngtree-d-cube-dice-with-white-dots-in-red-gradation-color-vector-png-image_12240389.png" alt="">
         </div>
-        <button id="button" type="button" class="btn btn-primary">Gioca</button>
+        <div class="px-5 text-center d-flex flex-column ">
+            <h1 class="text-danger">Clicca su gioca per generare un numero casuale</h1>
+            <div class="d-flex justify-content-center gap-5 m-5">
+                <div>
+                    <h2>Numero Utente</h2>
+                    <div id="user" class="fs-1 d-flex justify-content-center align-items-center"></div>
+                </div>
+                <div>
+                    <h2>Numero Computer</h2>
+                    <div id="computer" class="fs-1 d-flex justify-content-center align-items-center"></div>
+                </div>
+            </div>
+            <div><button id="button" type="button" class="btn btn-primary fs-2">Gioca</button></div>
+            <div id="result" class="p-5"></div>
+        </div>
     </section>
 
     <!-- script bootstrap -->

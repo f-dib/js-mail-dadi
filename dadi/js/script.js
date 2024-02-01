@@ -1,21 +1,35 @@
 const buttonElement = document.querySelector("#button");
-const numberElement = document.querySelector("#inputNumber");
+let humanDice = document.querySelector("#user");
+let computerDice = document.querySelector("#computer");
+let resultElement = document.querySelector("#result");
 
 
 buttonElement.addEventListener('click', 
     function() {
-        const computerChoice = Math.floor(Math.random() * 6) + 1;
-        const humanChoice = Math.floor(Math.random() * 6) + 1;
-
-        console.log(computerChoice);
-        console.log(humanChoice);
+        let computerChoice = Math.floor(Math.random() * 6) + 1;
+        let humanChoice = Math.floor(Math.random() * 6) + 1;
 
         if (humanChoice == computerChoice) {
-            console.log("pareggio")
+
+            computerDice.innerHTML = `${computerChoice}`;
+            humanDice.innerHTML = `${humanChoice}`;
+            resultElement.innerHTML = "Hai pareggiato";
+            resultElement.className = " text-warning";
+
         } else if (humanChoice > computerChoice){
-            console.log("hai vinto")
+            
+            computerDice.innerHTML = `${computerChoice}`;
+            humanDice.innerHTML = `${humanChoice}`;
+            resultElement.innerHTML = "Hai vinto";
+            resultElement.className = " text-success-emphasis";
+
         } else {
-            console.log("hai perso")
+            
+            computerDice.innerHTML = `${computerChoice}`;
+            humanDice.innerHTML = `${humanChoice}`;
+            resultElement.innerHTML = "Hai perso";
+            resultElement.className = " text-danger";
+
         }
     }
 )
