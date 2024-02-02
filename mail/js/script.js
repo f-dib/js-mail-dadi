@@ -24,12 +24,12 @@ buttonElement.addEventListener('click',
 
         if (confirm === true) {
             
-            resultElement.innerHTML = `La tua mail è presente nel nostro registro`
+            resultElement.innerHTML = `<span><i class="fa-solid fa-circle-exclamation"></i></span> La tua mail è presente nel nostro registro`
             resultElement.style.color = "red";
 
         } else {
 
-            resultElement.innerHTML = `La tua mail non è presente nel nostro registro`
+            resultElement.innerHTML = `<span><i class="fa-solid fa-circle-check"></i></span> La tua mail non è presente nel nostro registro`
             resultElement.style.color = "green";
 
         }
