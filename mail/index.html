@@ -20,15 +20,17 @@
 
     <section>
         <div class="d-flex flex-column align-items-center justify-content-center vh-100">
-            <h1 class="text-uppercase">Email spam list</h1>
-            <p>Controlla se la tua email è nella lista </p>
-            <div class="d-flex flex-column align-items-end">
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                    <div id="result"></div>
+            <div class="my_card">
+                <h1 class="text-uppercase mb-5 text-info">Email spam list</h1>
+                <p>Controlla se la tua email è nella lista </p>
+                <div class="d-flex flex-column align-items-end h-25">
+                    <div class="form-floating mb-3 my_height">
+                        <input type="email" class="form-control rounded-5" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                        <div id="result" class="p-1"></div>
+                    </div>
+                    <button id="button" type="button" class="btn btn-primary">Controlla</button>
                 </div>
-                <button id="button" type="button" class="btn btn-primary">Controlla</button>
             </div>
 
         </div>

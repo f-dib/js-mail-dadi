@@ -1,6 +1,7 @@
 const mails = ["qualcosa@gmail.com", "qualcosaltro@gmail.com", "ferrari@gmail.com", "hamilton@outlook.it"];
 const buttonElement = document.querySelector("#button");
 const inputElement = document.querySelector("#floatingInput");
+const resultElement = document.querySelector("#result");
 
 buttonElement.addEventListener('click', 
     
@@ -23,12 +24,14 @@ buttonElement.addEventListener('click',
 
         if (confirm === true) {
             
-            console.log("ma bravo")
-        
+            resultElement.innerHTML = `La tua mail è presente nel nostro registro`
+            resultElement.style.color = "red";
+
         } else {
 
-            console.log("e tu chi sei")
-        
+            resultElement.innerHTML = `La tua mail non è presente nel nostro registro`
+            resultElement.style.color = "green";
+
         }
     }
 

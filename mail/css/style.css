@@ -1,0 +1,13 @@
+.my_height {
+    width: 350px;
+    height: 75px;
+}
+
+.my_card {
+
+    padding: 150px 30px;
+
+    text-align: center;
+    border: 1px gray solid;
+    border-radius: 20px;
+}
